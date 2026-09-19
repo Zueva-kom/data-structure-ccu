@@ -30,16 +30,19 @@ void bubbleSortDesc(vector<int> & v){
 int main(){
     vector<int> v = {55, 39, 28, 80, 46};
 
+    cout << "Sebelum di sort"<< endl;
     for (auto i : v){
         cout << i << " ";
     }
     cout << endl;
 
+    cout << "Menaik"<< endl;
     bubbleSortAsc(v);
     for (auto i : v)
         cout << i << " ";   
 
-    
+    cout << endl;
+    cout << "Menurun"<< endl;
     bubbleSortDesc(v);
     for (auto i : v)
         cout << i << " ";  
