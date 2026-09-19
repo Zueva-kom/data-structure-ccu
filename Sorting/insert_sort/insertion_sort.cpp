@@ -20,11 +20,19 @@ int main() {
     int arr[] = {72, 14, 63, 31, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
 
+    cout << "Sebelum di sort: " << endl;
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+
+    cout << endl;
+
+
     insertionSort(arr, n);
 
+
+    cout << "Setelah di sort: " << endl;
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
-
     return 0;
 }
